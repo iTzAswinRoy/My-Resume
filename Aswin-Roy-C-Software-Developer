@@ -1,0 +1,203 @@
+
+\documentclass[a4paper,12pt]{article}
+
+%------------------------------------------------------------------------------
+%	FONT
+%------------------------------------------------------------------------------
+\usepackage{fontspec}
+\setmainfont{League Spartan}
+
+% % fontspec allows you to use TTF/OTF fonts directly
+% \usepackage{fontspec}
+% \defaultfontfeatures{Ligatures=TeX}
+
+% % modified for ShareLaTeX use
+% \setmainfont[
+% SmallCapsFont = Fontin-SmallCaps.otf,
+% BoldFont = Fontin-Bold.otf,
+% ItalicFont = Fontin-Italic.otf
+% ]
+% {Fontin.otf}
+
+%------------------------------------------------------------------------------
+%	PACKAGES
+%------------------------------------------------------------------------------
+\usepackage{emoji}
+\usepackage{url}
+\usepackage{parskip} 	
+% Heading gap
+\usepackage{titlesec}
+
+%other packages for formatting
+\RequirePackage{color}
+\RequirePackage{graphicx}
+\usepackage[usenames,dvipsnames]{xcolor}
+\usepackage[scale=0.9]{geometry}
+
+%tabularx environment
+\usepackage{tabularx}
+
+%for lists within experience section
+\usepackage{enumitem}
+
+% centered version of 'X' col. type
+\newcolumntype{C}{>{\centering\arraybackslash}X} 
+
+%to prevent spillover of tabular into next pages
+\usepackage{supertabular}
+\usepackage{tabularx}
+\newlength{\fullcollw}
+\setlength{\fullcollw}{0.47\textwidth}
+
+%custom \section
+\usepackage{titlesec}				
+\usepackage{multicol}
+\usepackage{multirow}
+
+%CV Sections inspired by: 
+%http://stefano.italians.nl/archives/26
+\titleformat{\section}{\Large\scshape\raggedright}{}{0em}{}[\titlerule]
+\titlespacing{\section}{0pt}{10pt}{10pt}
+
+%for publications
+%\usepackage[style=authoryear,sorting=ynt, maxbibnames=2]{biblatex}
+
+%Setup hyperref package, and colours for links
+\usepackage[unicode, draft=false]{hyperref}
+\definecolor{linkcolour}{rgb}{0,0.2,0.6}
+\hypersetup{colorlinks,breaklinks,urlcolor=linkcolour,linkcolor=linkcolour}
+%\addbibresource{citations.bib}
+%\setlength\bibitemsep{1em}
+
+%for social icons
+\usepackage{fontawesome5}
+
+%debug page outer frames
+%\usepackage{showframe}
+
+%------------------------------------------------------------------------------
+%	BEGIN DOCUMENT
+%------------------------------------------------------------------------------
+\begin{document}
+
+% non-numbered pages
+\pagestyle{empty} 
+
+%------------------------------------------------------------------------------
+%	Title
+%------------------------------------------------------------------------------
+
+% \begin{tabularx}{\linewidth}{ @{}X X@{} }
+% \huge{Your Name}\vspace{2pt} & \hfill \emoji{incoming-envelope} email@email.com \\
+% \raisebox{-0.05\height}\faGithub\ username \ | \
+% \raisebox{-0.00\height}\faLinkedin\ username \ | \ \raisebox{-0.05\height}\faGlobe \ mysite.com  & \hfill \emoji{calling} number
+% \end{tabularx}
+
+\begin{tabularx}{\linewidth}{@{} C @{}}
+\Huge{Aswin Roy C} \\[7.5pt]
+%\href{https://github.com/username}{\raisebox{-0.05\height}\faGithub\ username} \ $|$ \ 
+\href{https://www.linkedin.com/in/aswin-roy-c-25447a2b7/}{\raisebox{-0.05\height}\faLinkedin\ LinkedIn:aswin-roy-c} \ $|$ \ 
+%\href{https://mysite.com}{\raisebox{-0.05\height}\faGlobe \ mysite.com} \ $|$ \ 
+\href{mailto:aswinroy255@gmail.com}{\raisebox{-0.05\height}\faEnvelope \ aswinroy255@gmail.com} \ $|$ \ 
+\href{tel:+91 9940424654}{\raisebox{-0.05\height}\faMobile \ +91 9940424654} \\
+\end{tabularx}
+
+%------------------------------------------------------------------------------
+%   Description
+%------------------------------------------------------------------------------
+
+%Interests/ Keywords/ Summary
+\section{\emoji{student} About me}
+\quad I'm an aspiring software developer with proficient programming abilities. I am interested in Data Structures, Algorithms and Competitive Programming. I'm also experienced at problem-solving, debugging and implementing efficient code solutions to meet project requirements. My technical proficiency includes expertise in programming languages such as \textbf{Java} and \textbf{SQL}, as well as a solid understanding of the software development process. 
+
+%------------------------------------------------------------------------------
+%   Education
+%------------------------------------------------------------------------------
+
+\titlespacing{\section}{0pt}{*.5}{*1.5}
+\section{\emoji{graduation-cap} Education}
+\begin{tabularx}{\linewidth}{ @{}l r@{} }
+    \textbf{St.Joseph's College of Engineering} & \hfill \textbf{Chennai, Tamil Nadu} \\[3.75pt]
+    \multicolumn{2}{@{}X@{}}{M.E Manufacturing Engineering, CGPA - 8} \hfill 2021-2023\\
+\end{tabularx}
+
+\begin{tabularx}{\linewidth}{ @{}l r@{} }
+    \textbf{St.Joseph's Institute of Technology} & \hfill \textbf{Chennai, Tamil Nadu} \\[3.75pt]
+    \multicolumn{2}{@{}X@{}}{B.E Mechanical Engineering, CGPA - 7.5} \hfill 2017-2021\\
+\end{tabularx}
+
+%------------------------------------------------------------------------------
+%   Knowledge
+%------------------------------------------------------------------------------
+
+\titlespacing{\section}{0pt}{*.5}{*.25}
+\section{\emoji{open-book} Knowledge}
+\begin{tabularx}{\textwidth}{X} 
+    % Use the itemize environment within the table cell
+    \begin{itemize}
+        \item Object- oriented programming  concepts 
+        \item Arrays
+        \item Strings
+        \item Sorting
+        \item Conditional statements
+        \item Arithmetic problems
+        \item Dynamic programming
+        \item Relational database management system (RDBMS)
+    \end{itemize}
+\end{tabularx}
+
+%------------------------------------------------------------------------------
+%	Skills
+%------------------------------------------------------------------------------
+
+\titlespacing{\section}{0pt}{*-2}{*1.5}
+\section{\emoji{rocket} Skills}
+\begin{tabularx}{\linewidth}{@{}l X@{}}	
+    \textbf{Languages:} \\ [3.75pt]
+    \quad Java, SQL \\
+\end{tabularx}
+
+%------------------------------------------------------------------------------
+%	Workshop
+%------------------------------------------------------------------------------
+
+\titlespacing{\section}{0pt}{*.5}{*.5}
+\section{\emoji{briefcase} Workshop}
+\begin{tabularx}{\textwidth}{X} 
+    \begin{itemize}
+        \item International workshop on mahcine learning \hfill 2017
+    \end{itemize}
+\end{tabularx}
+
+%------------------------------------------------------------------------------
+%	Certifications
+%------------------------------------------------------------------------------
+
+\titlespacing{\section}{0pt}{*-2}{*.25}
+\section{\emoji{books} Certifications}
+\begin{tabularx}{\textwidth}{X} 
+    \begin{itemize}
+        \item Machine learning \hfill 2023, Udemy
+        \item The complete SQL Boot camp \hfill 2023, Udemy
+        \item SQL (Basic) \hfill 2023, HackerRank
+        \item SQL (Intermediate) \hfill 2023, HackerRank
+        \item SQL (Advanced) \hfill 2023, HackerRank
+        \item Cambridge English Language Assessment, scored 85\% \hfill 2018
+        \item Diploma in C programming (DCP) \hfill 2017
+      \end{itemize}
+\end{tabularx}
+
+%------------------------------------------------------------------------------
+%	Strength
+%------------------------------------------------------------------------------
+
+\titlespacing{\section}{0pt}{*-2}{*.25}
+\section{\emoji{flexed-biceps} Strengths}
+\begin{tabularx}{\textwidth}{X} 
+    \begin{itemize}
+        \item Team Player
+        \item Continuous Learning
+    \end{itemize}
+\end{tabularx}
+
+\end{document}
