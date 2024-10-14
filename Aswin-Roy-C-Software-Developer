@@ -1,6 +1,7 @@
-
 \documentclass[a4paper,12pt]{article}
+\usepackage[margin=0.45in, bottom=-0.5in]{geometry} % Adjust the bottom margin here
 
+\usepackage{tcolorbox}
 %------------------------------------------------------------------------------
 %	FONT
 %------------------------------------------------------------------------------
@@ -25,6 +26,7 @@
 \usepackage{emoji}
 \usepackage{url}
 \usepackage{parskip} 	
+
 % Heading gap
 \usepackage{titlesec}
 
@@ -33,7 +35,6 @@
 \RequirePackage{graphicx}
 \usepackage[usenames,dvipsnames]{xcolor}
 \usepackage[scale=0.9]{geometry}
-
 %tabularx environment
 \usepackage{tabularx}
 
@@ -110,7 +111,7 @@
 
 %Interests/ Keywords/ Summary
 \section{\emoji{student} About me}
-\quad I'm an aspiring software developer with proficient programming abilities. I am interested in Data Structures, Algorithms and Competitive Programming. I'm also experienced at problem-solving, debugging and implementing efficient code solutions to meet project requirements. My technical proficiency includes expertise in programming languages such as \textbf{Java} and \textbf{SQL}, as well as a solid understanding of the software development process. 
+\quad I'm an aspiring software developer with proficient programming abilities. I am interested in Data Structures, Algorithms and Computer Programming. I'm also experienced at problem-solving, debugging and implementing efficient code solutions to meet project requirements. My technical proficiency includes expertise in programming languages such as \textbf{Java} and \textbf{SQL}, as well as a solid understanding of the software development process. 
 
 %------------------------------------------------------------------------------
 %   Education
@@ -129,45 +130,170 @@
 \end{tabularx}
 
 %------------------------------------------------------------------------------
-%   Knowledge
+%   Skills
 %------------------------------------------------------------------------------
 
 \titlespacing{\section}{0pt}{*.5}{*.25}
-\section{\emoji{open-book} Knowledge}
-\begin{tabularx}{\textwidth}{X} 
-    % Use the itemize environment within the table cell
-    \begin{itemize}
-        \item Object- oriented programming  concepts 
-        \item Arrays
-        \item Strings
-        \item Sorting
-        \item Conditional statements
-        \item Arithmetic problems
-        \item Dynamic programming
-        \item Relational database management system (RDBMS)
-    \end{itemize}
-\end{tabularx}
+\section{\emoji{open-book} Skills}
 
-%------------------------------------------------------------------------------
-%	Skills
-%------------------------------------------------------------------------------
+\hfill
 
-\titlespacing{\section}{0pt}{*-2}{*1.5}
-\section{\emoji{rocket} Skills}
-\begin{tabularx}{\linewidth}{@{}l X@{}}	
-    \textbf{Languages:} \\ [3.75pt]
-    \quad Java, SQL \\
-\end{tabularx}
+% First Row
+\noindent
+\begin{minipage}{2cm}
+\centering
+\begin{tcolorbox}[
+    colback=blue!20,
+    colframe=blue!40,
+    boxrule=0.5pt,
+    framearc=4pt,
+    height=0.75cm,
+    valign=center
+]
+    Java
+\end{tcolorbox}
+\end{minipage}%
+\hfill \hspace{-3cm}
+\begin{minipage}{6.5cm}
+\centering
+\begin{tcolorbox}[
+    colback=blue!20,
+    colframe=blue!40,
+    boxrule=0.5pt,
+    framearc=4pt,
+    height=0.75cm,
+    valign=center
+]
+    Object Oriented Programming
+\end{tcolorbox}
+\end{minipage}%
+\hfill \hspace{-3cm}
+\begin{minipage}{5.25cm}
+\centering
+\begin{tcolorbox}[
+    colback=blue!20,
+    colframe=blue!40,
+    boxrule=0.5pt,
+    framearc=4pt,
+    height=0.75cm,
+    valign=center
+]
+    Dynamic Programming
+\end{tcolorbox}
+\end{minipage}\hfill\hspace{-3cm}
+\begin{minipage}{2.15cm}
+\centering
+\begin{tcolorbox}[
+    colback=blue!20,
+    colframe=blue!40,
+    boxrule=0.5pt,
+    framearc=4pt,
+    height=0.75cm,
+    valign=center
+]
+    MySQL
+\end{tcolorbox}
+\end{minipage}%
+\hfill\hfill\hspace{-4.5cm}
+
+
+\noindent
+\begin{minipage}{1.75cm}
+\centering
+\begin{tcolorbox}[
+    colback=blue!20,
+    colframe=blue!40,
+    boxrule=0.5pt,
+    framearc=4pt,
+    height=0.75cm,
+    valign=center
+]
+    DB2
+\end{tcolorbox}
+\end{minipage}\hfill\hspace{-1.25cm}
+\begin{minipage}{8.15cm}
+\centering
+\begin{tcolorbox}[
+    colback=blue!20,
+    colframe=blue!40,
+    boxrule=0.5pt,
+    framearc=4pt,
+    height=0.75cm,
+    valign=center
+]
+    Database Management System (DBMS)
+\end{tcolorbox}
+\end{minipage}\hfill\hfill\hspace{-2.5cm}
+\begin{minipage}{1.5cm}
+\centering
+\begin{tcolorbox}[
+    colback=blue!20,
+    colframe=blue!40,
+    boxrule=0.5pt,
+    framearc=4pt,
+    height=0.75cm,
+    valign=center
+]
+    Git
+\end{tcolorbox}
+\end{minipage}\hfill\hfill\hspace{-2.5cm}
+\begin{minipage}{2.15cm}
+\centering
+\begin{tcolorbox}[
+    colback=blue!20,
+    colframe=blue!40,
+    boxrule=0.5pt,
+    framearc=4pt,
+    height=0.75cm,
+    valign=center
+]
+    Python
+\end{tcolorbox}
+\end{minipage}%
+\hfill\hfill\hspace{-2.5cm}
+\begin{minipage}{1.55cm}
+\centering
+\begin{tcolorbox}[
+    colback=blue!20,
+    colframe=blue!40,
+    boxrule=0.5pt,
+    framearc=4pt,
+    height=0.75cm,
+    valign=center
+]
+    C++
+\end{tcolorbox}
+\end{minipage}\hspace{2.5cm}
+
+
+\vspace{0.1cm} % Adjust vertical space between rows
+
+% Third Row
+\noindent
+\begin{minipage}{5.575cm}
+\centering
+\begin{tcolorbox}[
+    colback=blue!20,
+    colframe=blue!40,
+    boxrule=0.5pt,
+    framearc=4pt,
+    height=0.75cm,
+    valign=center
+]
+    Business Communications
+\end{tcolorbox}
+\end{minipage}
+
 
 %------------------------------------------------------------------------------
 %	Workshop
 %------------------------------------------------------------------------------
 
-\titlespacing{\section}{0pt}{*.5}{*.5}
+\titlespacing{\section}{0pt}{*1.5}{*.25}
 \section{\emoji{briefcase} Workshop}
 \begin{tabularx}{\textwidth}{X} 
     \begin{itemize}
-        \item International workshop on mahcine learning \hfill 2017
+        \item International workshop on machine learning \hfill 2017
     \end{itemize}
 \end{tabularx}
 
@@ -175,7 +301,7 @@
 %	Certifications
 %------------------------------------------------------------------------------
 
-\titlespacing{\section}{0pt}{*-2}{*.25}
+\titlespacing{\section}{0pt}{*-2.5}{*.25}
 \section{\emoji{books} Certifications}
 \begin{tabularx}{\textwidth}{X} 
     \begin{itemize}
@@ -194,12 +320,28 @@
 %------------------------------------------------------------------------------
 
 \titlespacing{\section}{0pt}{*-2}{*.25}
-\section{\emoji{flexed-biceps} Strengths}
+\section{\emoji{light-bulb} Interests}
 \begin{tabularx}{\textwidth}{X} 
     \begin{itemize}
-        \item Team Player
-        \item Continuous Learning
+        \item Software Development
+        \item Data Engineering
     \end{itemize}
 \end{tabularx}
+
+%------------------------------------------------------------------------------
+%	Languages
+%------------------------------------------------------------------------------
+
+\titlespacing{\section}{0pt}{*-2}{*.25}
+\section{\emoji{globe-with-meridians} Languages}
+\begin{tabularx}{\textwidth}{X} 
+    % Use the itemize environment within the table cell
+    \begin{itemize}
+        \item ENGLISH \newline
+        \textsf{\textit {Full Professional Proficiency}} 
+        \item TAMIL \newline 
+        \textsf{\textit {Full Professional Proficiency}}
+    \end{itemize}
+\end{tabularx} 
 
 \end{document}
