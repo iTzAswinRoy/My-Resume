@@ -270,7 +270,7 @@
 
 % Third Row
 \noindent
-\begin{minipage}{5.575cm}
+\begin{minipage}{5.35cm}
 \centering
 \begin{tcolorbox}[
     colback=blue!20,
