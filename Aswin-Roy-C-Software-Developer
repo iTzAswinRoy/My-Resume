@@ -110,7 +110,7 @@
 %------------------------------------------------------------------------------
 
 %Interests/ Keywords/ Summary
-\section{\emoji{student} About me}
+\section{About me}
 \quad I'm an aspiring software developer with proficient programming abilities. I am interested in Data Structures, Algorithms and Computer Programming. I'm also experienced at problem-solving, debugging and implementing efficient code solutions to meet project requirements. My technical proficiency includes expertise in programming languages such as \textbf{Java} and \textbf{SQL}, as well as a solid understanding of the software development process. 
 
 %------------------------------------------------------------------------------
@@ -118,7 +118,7 @@
 %------------------------------------------------------------------------------
 
 \titlespacing{\section}{0pt}{*.5}{*1.5}
-\section{\emoji{graduation-cap} Education}
+\section{Education}
 \begin{tabularx}{\linewidth}{ @{}l r@{} }
     \textbf{St.Joseph's College of Engineering} & \hfill \textbf{Chennai, Tamil Nadu} \\[3.75pt]
     \multicolumn{2}{@{}X@{}}{M.E Manufacturing Engineering, CGPA - 8} \hfill 2021-2023\\
@@ -134,7 +134,7 @@
 %------------------------------------------------------------------------------
 
 \titlespacing{\section}{0pt}{*.5}{*.25}
-\section{\emoji{open-book} Skills}
+\section{Skills}
 
 \hfill
 
@@ -290,7 +290,7 @@
 %------------------------------------------------------------------------------
 
 \titlespacing{\section}{0pt}{*1.5}{*.25}
-\section{\emoji{briefcase} Workshop}
+\section{Workshop}
 \begin{tabularx}{\textwidth}{X} 
     \begin{itemize}
         \item International workshop on machine learning \hfill 2017
@@ -302,7 +302,7 @@
 %------------------------------------------------------------------------------
 
 \titlespacing{\section}{0pt}{*-2.5}{*.25}
-\section{\emoji{books} Certifications}
+\section{Certifications}
 \begin{tabularx}{\textwidth}{X} 
     \begin{itemize}
         \item Machine learning \hfill 2023, Udemy
@@ -320,7 +320,7 @@
 %------------------------------------------------------------------------------
 
 \titlespacing{\section}{0pt}{*-2}{*.25}
-\section{\emoji{light-bulb} Interests}
+\section{Interests}
 \begin{tabularx}{\textwidth}{X} 
     \begin{itemize}
         \item Software Development
@@ -333,7 +333,7 @@
 %------------------------------------------------------------------------------
 
 \titlespacing{\section}{0pt}{*-2}{*.25}
-\section{\emoji{globe-with-meridians} Languages}
+\section{Languages}
 \begin{tabularx}{\textwidth}{X} 
     % Use the itemize environment within the table cell
     \begin{itemize}
